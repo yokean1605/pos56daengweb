@@ -31,7 +31,7 @@
                 </li>
                 <li class="nav-item has-treeview">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-copy"></i>
+                        <i class="nav-icon fas fa-server    "></i>
                         <p>
                             Management Produk
                             <i class="fas fa-angle-left right"></i>
