@@ -5,7 +5,7 @@
         <a href="index3.html" class="brand-link">
         <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
             style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        <span class="brand-text font-weight-light">Aplikasi POS</span>
         </a>
 
         <!-- Sidebar -->
@@ -51,6 +51,20 @@
                             </a>
                         </li>
                     </ul>
+                </li>
+                <li class="nav-item has-treeview">
+                    <a class="nav-link" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
+                        <p>
+                            {{ __('Logout') }}
+                        </p>
+                    </a>
+                ​
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
                 </li>
             </ul>
         </nav>
