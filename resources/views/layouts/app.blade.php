@@ -23,7 +23,8 @@
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background: url('./dist/img/rs_depan.bmp');background-repeat: no-repeat;background-size: cover;">
+    <div class="overlay" style="background-color: rgba(0,0,0, .5); position: fixed; width: 100%; height:100%;"></div>
     @yield('content')
     <!-- jQuery -->
     <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
