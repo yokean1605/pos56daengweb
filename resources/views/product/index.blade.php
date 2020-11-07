@@ -78,9 +78,11 @@
                                                         class="btn btn-warning btn-sm">
                                                         <i class="fa fa-edit"></i>
                                                     </a>
-                                                    <button class="btn btn-danger btn-sm">
-                                                        <i class="fa fa-trash"></i>
-                                                    </button>
+                                                    @if (auth()->user()->can('delete products'))
+                                                        <button class="btn btn-danger btn-sm">
+                                                            <i class="fa fa-trash"></i>
+                                                        </button>
+                                                    @endif
                                                 </form>
                                             </td>
                                         </tr>

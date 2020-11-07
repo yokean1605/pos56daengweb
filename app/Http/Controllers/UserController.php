@@ -202,9 +202,9 @@ class UserController extends Controller
      /**
       * set Roles 
       */
-    public function setRoles()
+    public function setRoles(Request $request, $id)
     {
-        $this->validation($request, [
+        $this->validate($request, [
             'role' => 'required'
         ]);
 
