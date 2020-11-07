@@ -41,7 +41,7 @@ class RoleController extends Controller
         ]);
 
         $role = Role::firstOrCreate(['name' => $request->name]);
-        redirect()->back()->with(['success' => 'Role : <strong>' . $role->name . '</strong> Ditambahkan.']);
+        return redirect()->back()->with(['success' => 'Role : <strong>' . $role->name . '</strong> Ditambahkan.']);
     }
 
     /**

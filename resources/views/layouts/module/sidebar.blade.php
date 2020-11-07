@@ -67,6 +67,18 @@
                                 <p>Role</p>
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ route('users.index') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Users</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('users.roles_permission') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Role Permission</p>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item has-treeview">
